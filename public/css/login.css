@@ -1,0 +1,215 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/background_image/background_image.jpg');
+}
+
+.main-container{
+    width: 450px;
+    box-sizing: border-box;
+}
+
+.main-container p{
+    text-align: center;
+    
+}
+.signUp{
+    color: white;
+}
+.second-main-container{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 0px 20px 20px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.school-icon{
+    text-align: center;
+}
+.school-icon img{
+    height: 150px;
+    width: 150px;
+}
+
+.form-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* outline: 1px solid #d23600!important; */
+}
+
+form {
+    max-width: 350px;
+    width: 100%;
+    /* outline: 1px solid #d23600!important; */
+}
+
+
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.form-group input{
+    width: 90%;
+    padding: 16px;
+    display: block;
+    margin-bottom: 18px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+}
+
+.form-group input:focus,
+.form-group input:active {
+    outline: none;   /* to remove the border when giving input*/
+}
+
+.form-group input::placeholder {
+    color: #999;
+
+}
+
+
+.checkbox label{
+    font-size: 0.9rem;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+
+.checkbox input{
+    padding: 10px;
+}
+
+.checkbox input[type="checkbox"] {
+    cursor: pointer;
+    opacity: 0.3;
+    transform: scale(1.1);
+    margin-right: 10px;
+    
+}
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  border:2px solid grey;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border:2px solid green;
+  
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: red;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 8px;
+  top: 5px;
+  width: 5px;
+  height: 8px;
+  border: 2px solid black;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.forgot-password{
+    margin: 3px 0;
+    font-size: 0.9rem;
+}
+.forgot-password a{
+    text-decoration: none;
+    color: red;
+}
+
+button{
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background: linear-gradient(to top, #042954, #0b4776);
+    transition: all 0.3s ease-in-out;
+    color: rgb(255, 255, 255);
+}
+
+button:hover{
+    /* background: -webkit-gradient(linear, left bottom, left top, from(#1d3e81), to(#093354));
+    webkit-transition: all 0.3s ease-out; */
+    /* transition: all 0.3s ease-in-out; */
+      background: linear-gradient(to top, #1d3e81, #093354);
+  transition: all 0.3s ease-out; 
+}
+
+
+.sign_in_logos{
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+.sign_in_logos img{
+    height: 50px;
+    width: 50px;
+    padding: 2px;
+}
