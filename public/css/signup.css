@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-main-container {
+  border-radius: 9px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.main-container {
+  width: 400px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.school-icon {
+  text-align: center;
+}
+.school-icon img {
+  height: 150px;
+  width: 150px;
+}
+
+.admin,
+.student,
+.parents,
+.teacher {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5px;
+}
+
+.button-outside-logo {
+  position: relative;
+}
+
+.button-inside-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-51%, -56%);
+  background-color: #f9a408;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.button-inside-logo svg {
+  transform: translate(77%, 63%);
+  stroke-width: 1.75px;
+}
+
+.button-outside-logo svg path {
+  fill: #f9a408;
+}
+
+.button-inside-logo svg path {
+  fill: #f9a408;
+  color: white;
+  font-size: 1rem;
+}
+
+button {
+  width: 300px;
+  height: 50px;
+  margin-top: 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: #f9a408;
+}
+
+.login-link {
+  padding-left: 14px;
+}

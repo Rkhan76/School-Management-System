@@ -10,7 +10,7 @@ app.set('veiws', path.resolve('./views'))
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/', (req, res)=>{
-    return res.render('login')
+    return res.render('signup')
 })
 
 app.listen(port, () => console.log(`Server is running on port ${port}`))
