@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../images/background_image/background_image.jpg');
+}
+
+.top-main-container {
+  background-color: white;
+  border-radius: 9px;
+  padding: 0 20px 20px 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.main-container {
+  width: 400px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.school-icon {
+  text-align: center;
+}
+.school-icon img {
+  height: 150px;
+  width: 150px;
+}
+
+/* form {
+    width: 100%;
+    /* outline: 1px solid #d23600!important; */
+/* }  */
+/* .registration-form{
+  width: 100%;
+} */
+
+.registration-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.registration-form select,
+.registration-form input {
+  width: 90%;
+  padding: 10px;
+  display: block;
+  margin-bottom: 18px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.registration-form select {
+  width: 95%;
+}
+
+.registration-form select:focus,
+.registration-form select:active,
+.registration-form input:focus,
+.registration-form input:active {
+  outline: none; /* to remove the border when giving input*/
+}
+
+button {
+  width: 95.2%;
+  padding: 15px;
+  font-size: 1rem;
+  margin-top: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: linear-gradient(to top, #042954, #0b4776);
+  transition: all 0.3s ease-in-out;
+  color: rgb(255, 255, 255);
+}

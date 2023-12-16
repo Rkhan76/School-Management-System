@@ -9,8 +9,28 @@ app.set('veiws', path.resolve('./views'))
 
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.get('/', (req, res)=>{
+app.get('/login', (req, res)=>{
+    return res.render('login')
+})
+
+app.get('/signup', (req, res)=>{
     return res.render('signup')
+})
+
+app.get('/student_signup', (req, res)=>{
+    return res.render('student_signup')
+})
+
+app.get('/parents_signup', (req, res)=>{
+    return res.render('parents_signup')
+})
+
+app.get('/teacher_signup', (req, res) => {
+  return res.render('teacher_signup')
+})
+
+app.get('/admin_signup', (req, res) => {
+  return res.render('admin_signup')
 })
 
 app.listen(port, () => console.log(`Server is running on port ${port}`))
