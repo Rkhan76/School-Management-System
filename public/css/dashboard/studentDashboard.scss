@@ -7,6 +7,7 @@ body {
   font-family: 'Poppins', sans-serif;
   display: flex;
   width: 100%;
+  box-sizing: border-box;
 }
 
 // CSS for sidebar in studentboard
@@ -61,7 +62,8 @@ body {
     width: 100%;
     padding: 10px;
     justify-content: space-around;
-    gap: 300px;
+    gap: 616px;
+    box-sizing: border-box;
 
     .search-bar {
       display: flex;
@@ -69,8 +71,8 @@ body {
 
       .search-button {
         img {
-          height: 20px;
-          width: 20px;
+          height: 25px;
+          width: 25px;
         }
       }
 
@@ -87,37 +89,53 @@ body {
     .second-bar {
       display: flex;
       justify-content: space-around;
-      gap: 20px;
+      gap: 25px;
+    }
 
-      .user-profile {
-        display: flex;
-        justify-content: space-around;
-        gap: 5px;
+    .user-profile {
+      display: flex;
+      justify-content: space-around;
+      gap: 10px;
 
-        .user-profile-pic {
-          img {
-            height: 40px;
-            width: 40px;
-          }
-        }
-
-        .dropdown-symbol {
-          height: 10px;
-          width: 10px;
+      .username{
+        text-align: right;
+        p{
+          font-size: 0.8rem;
         }
       }
+      .dropdown-symbol {
+        height: 10px;
+        width: 10px;
+      }
 
-      .messages,
-      .notifications {
-        
-        .number{
-          position: absolute;
-        }
-
+      .user-profile-pic {
         img {
-          height: 20px;
-          width: 20px;
+          height: 40px;
+          width: 40px;
         }
+      }
+    }
+
+    .messages,
+    .notifications {
+      display: flex;
+      align-items: center;
+      .number {
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        text-align: center;
+        padding: 5px;
+        line-height: 1;
+        background-color: lightblue;
+        margin-left: 10px;
+        margin-bottom: 21px;
+      }
+
+      img {
+        height: 20px;
+        width: 20px;
       }
     }
   }
