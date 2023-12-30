@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+}
+
+
+/* CSS for sidebar in studentDashboard */
+
+/* ///////////////////////////////////////////////////////// */
+
+.sidebar{
+    width: 250px;
+    box-sizing: border-box;
+    outline: 1px solid red;
+}
+
+.side-navbar{
+    display: flex;
+    justify-content: space-around;
+    outline: 1px solid red;
+    gap: 134px;
+}
+
+.header-logo img{
+    height: 70px;
+    width: 70px;
+}
+.toggle-button{
+    padding-top: 16px;
+}
+
+.icon img{
+    height: 25px;
+    width: 25px;
+}
+
+.sidebar-sections {
+    display: flex;
+    justify-content: space-between;
+    outline: 1px solid red;
+    padding: 10px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////// */
+
+
+/* CSS for Right Container in studenDashboard  */
+/* /////////////////////////////////////////////////////////// */
+
+.navbar{
+    display: flex;
+    ;
+}
+
+
+/* navbar -> search bar */
+.search-bar{
+    display: flex;
+    align-items: center;
+}
+
+.search-button img{
+    height: 20px;
+    width: 20px
+}
+
+.text-input input {
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 17px;
+}
+
+/* navbar -> second bar contain profile info and message and notification */
+.second-bar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.username{
+    
+}
+
+.user-profile{
+    display: flex;
+}
+
+.user-profile-pic img {
+    height: 40px;
+    width: 40px;
+}
+
+.dropdown-symbol img{
+    height: 10px;
+    width: 10px;
+}
+
+.messages img, .notifications img{
+    height: 20px;
+    width: 20px;
+}
+
+/* //////////////////////////////////////////////////////////////// */

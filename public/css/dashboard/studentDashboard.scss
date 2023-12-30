@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  width: 100%;
+}
+
+// CSS for sidebar in studentboard
+.sidebar {
+  width: 250px;
+  box-sizing: border-box;
+  outline: 1px solid red;
+
+  // Side Navbar css
+  .sideNavbar {
+    display: flex;
+    justify-content: space-around;
+    outline: 1px solid red;
+    gap: 134px;
+
+    .headerLogo {
+      img {
+        height: 70px;
+        width: 70px;
+      }
+    }
+
+    .toggleButton {
+      padding-top: 16px;
+    }
+  }
+
+  // Other section of sidebar
+  .sidebarSections {
+    display: flex;
+    justify-content: space-between;
+    outline: 1px solid red;
+    padding: 10px;
+
+    .icon {
+      img {
+        height: 25px;
+        width: 25px;
+      }
+    }
+  }
+}
+
+// CSS for Right container -> Main Container
+
+.main-container {
+  width: 100%;
+  .navbar {
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-around;
+    gap: 300px;
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+
+      .search-button {
+        img {
+          height: 20px;
+          width: 20px;
+        }
+      }
+
+      .text-input {
+        input {
+          border: none;
+          outline: none;
+          padding: 8px;
+          font-size: 17px;
+        }
+      }
+    }
+
+    .second-bar {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+
+      .user-profile {
+        display: flex;
+        justify-content: space-around;
+        gap: 5px;
+
+        .user-profile-pic {
+          img {
+            height: 40px;
+            width: 40px;
+          }
+        }
+
+        .dropdown-symbol {
+          height: 10px;
+          width: 10px;
+        }
+      }
+
+      .messages,
+      .notifications {
+        
+        .number{
+          position: absolute;
+        }
+
+        img {
+          height: 20px;
+          width: 20px;
+        }
+      }
+    }
+  }
+}
