@@ -112,5 +112,44 @@ body {
   height: 20px;
   width: 20px;
 }
+.main-container .main-content .dashboardName {
+  background-color: yellow;
+}
+.main-container .main-content .detailContainerTop .leftPart .aboutMe {
+  background-color: skyblue;
+  width: 300px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.main-container .main-content .detailContainerTop .rightPart {
+  background-color: lightgreen;
+}
+.main-container .main-content .detailContainerTop .rightPart .top-container {
+  background-color: green;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.main-container .main-content .detailContainerTop .rightPart .top-container .part {
+  background-color: rebeccapurple;
+}
+.main-container .main-content .detailContainerTop .rightPart .top-container .part .icon img {
+  height: 50px;
+  width: 50px;
+}
+.main-container .main-content .detailContainerButtom .attendence #backButton {
+  border-radius: 4px;
+  padding: 8px;
+  border: none;
+  font-size: 16px;
+  background-color: #2eacd1;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.main-container .main-content .detailContainerButtom .attendence .invisible {
+  display: none;
+}
 
 /*# sourceMappingURL=studentDashboard.css.map */
