@@ -247,229 +247,275 @@
           <div class="bottom-container">
             <div class="sectionName">
               <h3>All Exam Results</h3>
-              <a class="dropdown-toggle" href="#">...</a>
+              <a class="dropdown-toggle" href="#">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </a>
             </div>
             <div class="searchBar">
-              <div class="searchByExam">
-                <input type="text" placeholder="search By Exam ... " />
+              <div class="searchByExam search-sections">
+                <input type="text" placeholder="Search by Exam ... " />
               </div>
-              <div class="searchBySubject">
-                <input type="text" placeholder="search By Subject ... " />
+              <div class="searchBySubject search-sections">
+                <input type="text" placeholder="Search by Subject ... " />
               </div>
-              <div class="searchByDate">
+              <div class="searchByDate search-sections">
                 <input type="text" placeholder="dd/mm/yyyy" />
               </div>
               <button type="submit">Submit</button>
             </div>
-            <div class="resultTable">
-              <table class="resultdata">
-                <thead>
-                  <th>ID</th>
-                  <th>Exam Name</th>
-                  <th>Subject</th>
-                  <th>Grade</th>
-                  <th>Precent</th>
-                  <th>Date</th>
-                </thead>
-                <tr>
-                  <td>#0025</td>
-                  <td>First Semseter</td>
-                  <td>English</td>
-                  <td>A</td>
-                  <td>99.0>100</td>
-                  <td>22/02/2024</td>
-                </tr>
-                <tr>
-                  <td>#0025</td>
-                  <td>First Semseter</td>
-                  <td>English</td>
-                  <td>A</td>
-                  <td>99.0>100</td>
-                  <td>22/02/2024</td>
-                </tr>
-                <tr>
-                  <td>#0025</td>
-                  <td>First Semseter</td>
-                  <td>English</td>
-                  <td>A</td>
-                  <td>99.0>100</td>
-                  <td>22/02/2024</td>
-                </tr>
-                <tr>
-                  <td>#0025</td>
-                  <td>First Semseter</td>
-                  <td>English</td>
-                  <td>A</td>
-                  <td>99.0>100</td>
-                  <td>22/02/2024</td>
-                </tr>
-                <tr>
-                  <td>#0025</td>
-                  <td>First Semseter</td>
-                  <td>English</td>
-                  <td>A</td>
-                  <td>99.0>100</td>
-                  <td>22/02/2024</td>
-                </tr>
-                <tr>
-                  <td>#0025</td>
-                  <td>First Semseter</td>
-                  <td>English</td>
-                  <td>A</td>
-                  <td>99.0>100</td>
-                  <td>22/02/2024</td>
-                </tr>
-                <tr>
-                  <td>#0025</td>
-                  <td>First Semseter</td>
-                  <td>English</td>
-                  <td>A</td>
-                  <td>99.0>100</td>
-                  <td>22/02/2024</td>
-                </tr>
-                <tr>
-                  <td>#0025</td>
-                  <td>First Semseter</td>
-                  <td>English</td>
-                  <td>A</td>
-                  <td>99.0>100</td>
-                  <td>22/02/2024</td>
-                </tr>
-                <tr>
-                  <td>#0025</td>
-                  <td>First Semseter</td>
-                  <td>English</td>
-                  <td>A</td>
-                  <td>99.0>100</td>
-                  <td>22/02/2024</td>
-                </tr>
-              </table>
-            </div>
-            <div class="pageScroller">
-              <div class="previous" type="submit">Previous</div>
-              <div class="currentPage">1</div>
-              <div class="Next" type="submit">Next</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="detailContainerButtom">
-        <div class="attendence">
-          <div id="chartContainer" style="height: 370px; width: 100%;"></div>
-          <button class="btn invisible" id="backButton">Back</button>
-        </div>
-        <div class="EventCalender">
-          <div class="sectionName">
-            <div class="sectionheader">Event Calender</div>
-            <a class="dropdown-toggle" href="#">...</a>
-          </div>
-          <div class="dateSection">
-            <div class="date">February 2024</div>
-            <div class="buttons">
-              <div class="previous" type="submit"><i class="la la-angle-left"></i></div>
-              <div class="next" type="submit"><i class="la la-angle-right"></i></div>
-            </div>
-          </div>
-          <div class="dayMonthYearSection">
-            <div class="day">Day</div>
-            <div class="month">Month</div>
-            <div class="year">Year</div>
-          </div>
-          <div class="calenderSection">
-            <table class="calender">
+            <table class="resultTable">
               <thead>
-                <th>Sun</th>
-                <th>Mon</th>
-                <th>Tue</th>
-                <th>Wed</th>
-                <th>Thurs</th>
-                <th>Fri</th>
-                <th>Sat</th>
+                <th>ID</th>
+                <th>Exam Name</th>
+                <th>Subject</th>
+                <th>Grade</th>
+                <th>Precent</th>
+                <th>Date</th>
               </thead>
               <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
+                <td>#0025</td>
+                <td>First Semester</td>
+                <td>English</td>
+                <td>A</td>
+                <td>99.0>100</td>
+                <td>22/02/2024</td>
+                <td><a class="dropdown-toggle" href="#">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </a></td>
               </tr>
               <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
+                <td>#0025</td>
+                <td>First Semester</td>
+                <td>English</td>
+                <td>A</td>
+                <td>99.0>100</td>
+                <td>22/02/2024</td>
+                <td><a class="dropdown-toggle" href="#">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </a></td>
               </tr>
               <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
+                <td>#0025</td>
+                <td>First Semester</td>
+                <td>English</td>
+                <td>A</td>
+                <td>99.0>100</td>
+                <td>22/02/2024</td>
+                <td><a class="dropdown-toggle" href="#">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </a></td>
               </tr>
               <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
+                <td>#0025</td>
+                <td>First Semester</td>
+                <td>English</td>
+                <td>A</td>
+                <td>99.0>100</td>
+                <td>22/02/2024</td>
+                <td><a class="dropdown-toggle" href="#">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </a></td>
               </tr>
               <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-                <td>6</td>
-                <td>7</td>
+                <td>#0025</td>
+                <td>First Semester</td>
+                <td>English</td>
+                <td>A</td>
+                <td>99.0>100</td>
+                <td>22/02/2024</td>
+                <td><a class="dropdown-toggle" href="#">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </a></td>
+              </tr>
+              <tr>
+                <td>#0025</td>
+                <td>First Semester</td>
+                <td>English</td>
+                <td>A</td>
+                <td>99.0>100</td>
+                <td>22/02/2024</td>
+                <td><a class="dropdown-toggle" href="#">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </a></td>
+              </tr>
+              <tr>
+                <td>#0025</td>
+                <td>First Semester</td>
+                <td>English</td>
+                <td>A</td>
+                <td>99.0>100</td>
+                <td>22/02/2024</td>
+                <td><a class="dropdown-toggle" href="#">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </a></td>
+              </tr>
+              <tr>
+                <td>#0025</td>
+                <td>First Semester</td>
+                <td>English</td>
+                <td>A</td>
+                <td>99.0>100</td>
+                <td>22/02/2024</td>
+                <td><a class="dropdown-toggle" href="#">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </a></td>
+              </tr>
+              <tr>
+                <td>#0025</td>
+                <td>First Semester</td>
+                <td>English</td>
+                <td>A</td>
+                <td>99.0>100</td>
+                <td>22/02/2024</td>
+                <td><a class="dropdown-toggle" href="#">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </a></td>
               </tr>
             </table>
-          </div>
-        </div>
-        <div class="Notification">
-          <div class="sectionName">
-            <div class="header">Notifications</div>
-            <a class="dropdown-toggle" href="#">...</a>
-          </div>
-          <div class="messages">
-            <div class="dateOfNotification">16June,2019</div>
-            <p class="message">Great School manag mene esom tus eleifend lectus sed maximus mi faucibusnting.</p>
-            <p class="user&time">Jennyfar Lopez / 5 min ago</p>
-            <hr>
-          </div>
-          <div class="messages">
-            <div class="dateOfNotification">16June,2019</div>
-            <p class="message">Great School manag mene esom tus eleifend lectus sed maximus mi faucibusnting.</p>
-            <p class="user&time">Jennyfar Lopez / 5 min ago</p>
-            <hr>
-          </div>
-          <div class="messages">
-            <div class="dateOfNotification">16June,2019</div>
-            <p class="message">Great School manag mene esom tus eleifend lectus sed maximus mi faucibusnting.</p>
-            <p class="user&time">Jennyfar Lopez / 5 min ago</p>
-            <hr>
-          </div>
-          <div class="messages">
-            <div class="dateOfNotification">16June,2019</div>
-            <p class="message">Great School manag mene esom tus eleifend lectus sed maximus mi faucibusnting.</p>
-            <p class="user&time">Jennyfar Lopez / 5 min ago</p>
-            <hr>
+
+            <div class="pageScroller">
+              <div class="previous button" type="submit">Previous</div>
+              <div class="currentPage button">1</div>
+              <div class="Next button" type="submit">Next</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="copyright">
-      <p>© Copyrights akkhor 2019. All rights reserved. Designed by PsdBosS</p>
-      <div class="upbutton"><i class="las la-chevron-circle-up"></i></div>
+    <div class="detailContainerButtom">
+      <div class="attendence">
+        <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+        <button class="btn invisible" id="backButton">Back</button>
+      </div>
+      <div class="EventCalender">
+        <div class="sectionName">
+          <div class="sectionheader">Event Calender</div>
+          <a class="dropdown-toggle" href="#">...</a>
+        </div>
+        <div class="dateSection">
+          <div class="date">February 2024</div>
+          <div class="buttons">
+            <div class="previous" type="submit"><i class="la la-angle-left"></i></div>
+            <div class="next" type="submit"><i class="la la-angle-right"></i></div>
+          </div>
+        </div>
+        <div class="dayMonthYearSection">
+          <div class="day">Day</div>
+          <div class="month">Month</div>
+          <div class="year">Year</div>
+        </div>
+        <div class="calenderSection">
+          <table class="calender">
+            <thead>
+              <th>Sun</th>
+              <th>Mon</th>
+              <th>Tue</th>
+              <th>Wed</th>
+              <th>Thurs</th>
+              <th>Fri</th>
+              <th>Sat</th>
+            </thead>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="Notification">
+        <div class="sectionName">
+          <div class="header">Notifications</div>
+          <a class="dropdown-toggle" href="#">...</a>
+        </div>
+        <div class="messages">
+          <div class="dateOfNotification">16June,2019</div>
+          <p class="message">Great School manag mene esom tus eleifend lectus sed maximus mi faucibusnting.</p>
+          <p class="user&time">Jennyfar Lopez / 5 min ago</p>
+          <hr>
+        </div>
+        <div class="messages">
+          <div class="dateOfNotification">16June,2019</div>
+          <p class="message">Great School manag mene esom tus eleifend lectus sed maximus mi faucibusnting.</p>
+          <p class="user&time">Jennyfar Lopez / 5 min ago</p>
+          <hr>
+        </div>
+        <div class="messages">
+          <div class="dateOfNotification">16June,2019</div>
+          <p class="message">Great School manag mene esom tus eleifend lectus sed maximus mi faucibusnting.</p>
+          <p class="user&time">Jennyfar Lopez / 5 min ago</p>
+          <hr>
+        </div>
+        <div class="messages">
+          <div class="dateOfNotification">16June,2019</div>
+          <p class="message">Great School manag mene esom tus eleifend lectus sed maximus mi faucibusnting.</p>
+          <p class="user&time">Jennyfar Lopez / 5 min ago</p>
+          <hr>
+        </div>
+      </div>
     </div>
+  </div>
+
   </div>
 
   <!-- js for attendence chart -->

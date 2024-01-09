@@ -143,8 +143,8 @@ body {
 .main-container .main-content .detailContainerTop .leftPart .aboutMe {
   box-sizing: border-box;
   padding: 20px;
-  background-color: #ffffff;
   width: 360px;
+  background-color: #ffffff;
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .main-container .main-content .detailContainerTop .leftPart .aboutMe .heading-layout1 {
@@ -192,7 +192,8 @@ body {
 .main-container .main-content .detailContainerTop .leftPart .aboutMe .profile-detail .profile-table .key {
   font-weight: bold;
 }
-.main-container .main-content .detailContainerTop .leftPart .aboutMe .profile-detail tr, .main-container .main-content .detailContainerTop .leftPart .aboutMe .profile-detail td {
+.main-container .main-content .detailContainerTop .leftPart .aboutMe .profile-detail tr,
+.main-container .main-content .detailContainerTop .leftPart .aboutMe .profile-detail td {
   margin-bottom: 10px;
 }
 .main-container .main-content .detailContainerTop .rightPart {
@@ -200,19 +201,121 @@ body {
   background-color: lightgreen;
 }
 .main-container .main-content .detailContainerTop .rightPart .top-container {
-  background-color: green;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 .main-container .main-content .detailContainerTop .rightPart .top-container .part {
-  background-color: rebeccapurple;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 10px;
+}
+.main-container .main-content .detailContainerTop .rightPart .top-container .part .icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: aqua;
 }
 .main-container .main-content .detailContainerTop .rightPart .top-container .part .icon img {
   height: 50px;
   width: 50px;
+  position: absolute;
+  text-align: center;
+  margin-left: 18px;
+  margin-top: 18px;
 }
-.main-container .main-content .detailContainerButtom .attendence #backButton {
+.main-container .main-content .detailContainerTop .rightPart .top-container .part .notification-detail {
+  text-align: end;
+}
+.main-container .main-content .detailContainerTop .rightPart .bottom-container {
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  margin-top: 25px;
+  height: 82.55%;
+}
+.main-container .main-content .detailContainerTop .rightPart .bottom-container .sectionName {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.main-container .main-content .detailContainerTop .rightPart .bottom-container .sectionName .dropdown-toggle {
+  text-decoration: none;
+}
+.main-container .main-content .detailContainerTop .rightPart .bottom-container .sectionName .dropdown-toggle .dot {
+  display: inline-block; /* or display: block; */
+  width: 5px;
+  height: 5px;
+  background-color: #bcbcbc;
+  border-radius: 50%;
+  margin: 3px 0;
+}
+.main-container .main-content .detailContainerTop .rightPart .bottom-container .searchBar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.main-container .main-content .detailContainerTop .rightPart .bottom-container .searchBar .search-sections input {
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  background-color: #f8f8f8;
+  font-size: 15px;
+}
+.main-container .main-content .detailContainerTop .rightPart .bottom-container .searchBar button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 2px;
+}
+.main-container .main-content .detailContainerTop .rightPart .bottom-container .resultTable {
+  margin-top: 25px;
+  width: 100%;
+  border: 1px solid rgba(221, 221, 221, 0.8666666667);
+}
+.main-container .main-content .detailContainerTop .rightPart .bottom-container .resultTable th,
+.main-container .main-content .detailContainerTop .rightPart .bottom-container .resultTable td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+.main-container .main-content .detailContainerTop .rightPart .bottom-container .resultTable tr:last-child td {
+  border-bottom: none; /* Remove border for all td in the last row */
+}
+.main-container .main-content .detailContainerTop .rightPart .bottom-container .resultTable td .dropdown-toggle {
+  text-decoration: none;
+}
+.main-container .main-content .detailContainerTop .rightPart .bottom-container .resultTable td .dropdown-toggle .dot {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: #bcbcbc;
+  border-radius: 50%;
+  margin: 3px 0;
+}
+.main-container .main-content .detailContainerTop .rightPart .bottom-container .pageScroller {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 31px;
+  padding: 12px;
+}
+.main-container .main-content .detailContainerTop .rightPart .bottom-container .pageScroller .button {
+  padding: 10px;
+  border-radius: 2px;
+}
+.main-container .main-content .detailContainerTop .rightPart .bottom-container .pageScroller .currentPage {
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  background-color: orange;
+}
+.main-container .main-content .detailContainerTop .detailContainerButtom .attendence #backButton {
   border-radius: 4px;
   padding: 8px;
   border: none;
@@ -224,7 +327,7 @@ body {
   right: 10px;
   cursor: pointer;
 }
-.main-container .main-content .detailContainerButtom .attendence .invisible {
+.main-container .main-content .detailContainerTop .detailContainerButtom .attendence .invisible {
   display: none;
 }
 
