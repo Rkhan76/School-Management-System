@@ -12,30 +12,60 @@ body {
 }
 
 .sidebar {
+  background-color: #042954;
   width: 250px;
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 .sidebar .sideNavbar {
+  width: 100%;
   display: flex;
   justify-content: space-around;
-  outline: 1px solid red;
-  gap: 134px;
+  gap: 135px;
+  background-color: #ffa600;
 }
 .sidebar .sideNavbar .headerLogo img {
-  height: 70px;
-  width: 70px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-top: 9px;
 }
 .sidebar .sideNavbar .toggleButton {
-  padding-top: 16px;
+  height: 32px;
+  width: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+  align-items: end;
+  margin-top: 16px;
+  padding: 1px 14px;
 }
-.sidebar .sidebarSections {
+.sidebar .sideNavbar .toggleButton .line1 {
+  background-color: white;
+  width: 40px;
+  height: 1px;
+}
+.sidebar .sideNavbar .toggleButton .line2 {
+  background-color: white;
+  width: 29px;
+  height: 1px;
+}
+.sidebar .sections-container hr {
+  border-color: #02060c;
+}
+.sidebar .sections-container .sidebarSections {
   display: flex;
   justify-content: space-between;
-  outline: 1px solid red;
   padding: 10px;
+  margin-bottom: 1px;
+  background-color: #042954;
+  color: white;
 }
-.sidebar .sidebarSections .icon img {
+.sidebar .sections-container .sidebarSections .icon svg path {
+  fill: #ffa600;
+}
+.sidebar .sections-container .sidebarSections .icon img {
+  fill: #ffa600 !important;
   height: 25px;
   width: 25px;
 }
@@ -45,7 +75,7 @@ body {
 }
 .main-container .navbar {
   display: flex;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   width: 100%;
   padding: 10px;
   justify-content: space-around;
@@ -98,8 +128,8 @@ body {
 .main-container .navbar .messages .number,
 .main-container .navbar .notifications .number {
   position: absolute;
-  height: 15px;
-  width: 15px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
   text-align: center;
   padding: 5px;
@@ -130,22 +160,23 @@ body {
   gap: 10px;
 }
 .main-container .main-content .dashboardName .routeName .color {
-  color: orange;
+  color: #ffa600;
 }
 .main-container .main-content .detailContainerTop {
   display: flex;
-  gap: 10px;
+  gap: 30px;
   padding: 30px;
 }
 .main-container .main-content .detailContainerTop .leftPart {
   box-sizing: border-box;
 }
 .main-container .main-content .detailContainerTop .leftPart .aboutMe {
+  border-radius: 4px;
   box-sizing: border-box;
   padding: 20px;
   width: 360px;
   background-color: #ffffff;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .main-container .main-content .detailContainerTop .leftPart .aboutMe .heading-layout1 {
   display: flex;
@@ -198,17 +229,16 @@ body {
 }
 .main-container .main-content .detailContainerTop .rightPart {
   flex-grow: 1;
-  background-color: lightgreen;
 }
 .main-container .main-content .detailContainerTop .rightPart .top-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 30px;
 }
 .main-container .main-content .detailContainerTop .rightPart .top-container .part {
-  border-radius: 2px;
+  border-radius: 4px;
   background-color: #ffffff;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   display: flex;
   justify-content: space-around;
   padding: 20px;
@@ -232,12 +262,13 @@ body {
   text-align: end;
 }
 .main-container .main-content .detailContainerTop .rightPart .bottom-container {
+  border-radius: 4px;
   box-sizing: border-box;
   padding: 20px;
   background-color: #ffffff;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-  margin-top: 25px;
-  height: 82.55%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-top: 30px;
+  height: 82.1%;
 }
 .main-container .main-content .detailContainerTop .rightPart .bottom-container .sectionName {
   display: flex;
@@ -272,6 +303,7 @@ body {
   padding: 10px 25px;
   border: none;
   border-radius: 2px;
+  background-color: #ffa600;
 }
 .main-container .main-content .detailContainerTop .rightPart .bottom-container .resultTable {
   margin-top: 25px;
@@ -313,22 +345,27 @@ body {
   height: 45px;
   width: 45px;
   text-align: center;
-  background-color: orange;
+  background-color: #ffa600;
 }
-.main-container .main-content .detailContainerTop .detailContainerButtom .attendence #backButton {
-  border-radius: 4px;
-  padding: 8px;
-  border: none;
-  font-size: 16px;
-  background-color: #2eacd1;
+.main-container .copyright {
+  background-color: #f0f1f3;
+  padding: 20px;
+  display: flex;
+  line-height: 3;
+  justify-content: space-around;
+  gap: 597px;
+}
+.main-container .copyright .upButton {
+  height: 50px;
+  width: 50px;
+  background: #042954;
+  border-radius: 50%;
+}
+.main-container .copyright .upButton .upwardSymbol {
   color: white;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-}
-.main-container .main-content .detailContainerTop .detailContainerButtom .attendence .invisible {
-  display: none;
+  margin-top: 9px;
+  margin-left: 10px;
+  font-size: 32px;
 }
 
 /*# sourceMappingURL=studentDashboard.css.map */

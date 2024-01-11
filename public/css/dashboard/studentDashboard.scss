@@ -1,3 +1,6 @@
+$main-color: #ffa600;
+$accent-color: #042954;
+$border-box-color: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 * {
   margin: 0;
   padding: 0;
@@ -13,40 +16,76 @@ body {
 
 // CSS for sidebar in studentboard
 .sidebar {
+  background-color: $accent-color;
   width: 250px;
   box-sizing: border-box;
-  outline: 1px solid red;
 
   // Side Navbar css
   .sideNavbar {
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    outline: 1px solid red;
-    gap: 134px;
+    gap: 135px;
+    background-color: $main-color;
 
     .headerLogo {
       img {
-        height: 70px;
-        width: 70px;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-top: 9px;
       }
     }
-
     .toggleButton {
-      padding-top: 16px;
+      height: 32px;
+      width: 55px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 7px;
+      align-items: end;
+      margin-top: 16px;
+      padding: 1px 14px;
+      .line1 {
+        background-color: white;
+        width: 40px;
+        height: 1px;
+      }
+      .line2 {
+        background-color: white;
+        width: 29px;
+        height: 1px;
+      }
     }
   }
 
-  // Other section of sidebar
-  .sidebarSections {
-    display: flex;
-    justify-content: space-between;
-    outline: 1px solid red;
-    padding: 10px;
+  .sections-container {
+    // background-color: #02060c;
 
-    .icon {
-      img {
-        height: 25px;
-        width: 25px;
+    hr {
+      border-color: #02060c;
+    }
+    // Other section of sidebar
+    .sidebarSections {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      margin-bottom: 1px;
+      background-color: $accent-color;
+      color: white;
+
+      .icon {
+        
+
+        svg path {
+          fill: $main-color;
+        }
+
+        img {
+          fill: $main-color !important;
+          height: 25px;
+          width: 25px;
+        }
       }
     }
   }
@@ -59,8 +98,7 @@ body {
 
   .navbar {
     display: flex;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    box-shadow: $border-box-color;
     width: 100%;
     padding: 10px;
     justify-content: space-around;
@@ -124,8 +162,8 @@ body {
       align-items: center;
       .number {
         position: absolute;
-        height: 15px;
-        width: 15px;
+        height: 25px;
+        width: 25px;
         border-radius: 50%;
         text-align: center;
         padding: 5px;
@@ -157,25 +195,25 @@ body {
         gap: 10px;
 
         .color {
-          color: orange;
+          color: $main-color;
         }
       }
     }
 
     .detailContainerTop {
       display: flex;
-      gap: 10px;
+      gap: 30px;
       padding: 30px;
 
       .leftPart {
         box-sizing: border-box;
         .aboutMe {
+          border-radius: 4px;
           box-sizing: border-box;
           padding: 20px;
           width: 360px;
           background-color: #ffffff;
-          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-            rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+          box-shadow: $border-box-color;
 
           .heading-layout1 {
             display: flex;
@@ -242,16 +280,14 @@ body {
 
       .rightPart {
         flex-grow: 1;
-        background-color: lightgreen;
         .top-container {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-          gap: 10px;
+          gap: 30px;
           .part {
-            border-radius: 2px;
+            border-radius: 4px;
             background-color: #ffffff;
-            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-              rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            box-shadow: $border-box-color;
             display: flex;
             justify-content: space-around;
             padding: 20px;
@@ -276,13 +312,13 @@ body {
           }
         }
         .bottom-container {
+          border-radius: 4px;
           box-sizing: border-box;
           padding: 20px;
           background-color: #ffffff;
-          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-            rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-          margin-top: 25px;
-          height: 82.55%;
+          box-shadow: $border-box-color;
+          margin-top: 30px;
+          height: 82.1%;
           .sectionName {
             display: flex;
             justify-content: space-between;
@@ -319,6 +355,7 @@ body {
               padding: 10px 25px;
               border: none;
               border-radius: 2px;
+              background-color: $main-color;
             }
           }
           .resultTable {
@@ -366,31 +403,62 @@ body {
               height: 45px;
               width: 45px;
               text-align: center;
-              background-color: orange;
+              background-color: $main-color;
             }
           }
         }
       }
+    }
+  }
+  // .detailContainerButtom {
+  //   display: flex;
+  //   justify-content: space-around;
+  //   width: 100%;
+  //   box-sizing: border-box;
+  //   .detail-box {
+  //     width: 300px;
+  //     padding: 20px;
+  //     background-color: lightblue;
+  //   }
+  //   .attendence {
+  //     #backButton {
+  //       border-radius: 4px;
+  //       padding: 8px;
+  //       border: none;
+  //       font-size: 16px;
+  //       background-color: #2eacd1;
+  //       color: white;
+  //       position: absolute;
+  //       top: 10px;
+  //       right: 10px;
+  //       cursor: pointer;
+  //     }
 
-      .detailContainerButtom {
-        .attendence {
-          #backButton {
-            border-radius: 4px;
-            padding: 8px;
-            border: none;
-            font-size: 16px;
-            background-color: #2eacd1;
-            color: white;
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-          }
+  //     .invisible {
+  //       display: none;
+  //     }
+  //   }
+  // }
 
-          .invisible {
-            display: none;
-          }
-        }
+  .copyright {
+    background-color: #f0f1f3;
+    padding: 20px;
+    display: flex;
+    line-height: 3;
+    justify-content: space-around;
+    gap: 597px;
+
+    .upButton {
+      height: 50px;
+      width: 50px;
+      background: $accent-color;
+      border-radius: 50%;
+
+      .upwardSymbol {
+        color: white;
+        margin-top: 9px;
+        margin-left: 10px;
+        font-size: 32px;
       }
     }
   }
