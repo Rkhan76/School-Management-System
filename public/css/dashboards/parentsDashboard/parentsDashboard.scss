@@ -309,7 +309,142 @@ body {
       .all-expenses {
         border-radius: 4px;
         box-sizing: border-box;
+        padding: 20px 35px;
+        background-color: #ffffff;
+        box-shadow: $border-box-color;
+        margin-top: 30px;
+        height: 82.1%;
+        .sectionName {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 20px;
+
+          .dropdown-toggle {
+            text-decoration: none;
+            .dot {
+              display: inline-block; /* or display: block; */
+              width: 5px;
+              height: 5px;
+              background-color: #bcbcbc;
+              border-radius: 50%;
+              margin: 3px 0;
+            }
+          }
+        }
+        .searchBar {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 25px;
+
+          .search-sections {
+            input {
+              padding: 10px;
+              border-radius: 2px;
+              border: none;
+              outline: none;
+              background-color: #f8f8f8;
+              font-size: 15px;
+            }
+          }
+          button {
+            padding: 10px 25px;
+            border: none;
+            border-radius: 2px;
+            background-color: $main-color;
+          }
+        }
+        .resultTable {
+          margin-top: 25px;
+          width: 100%;
+          border: 1px solid #dddd;
+
+          th,
+          td {
+            border-bottom: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+          }
+
+          tr:last-child td {
+            border-bottom: none; /* Remove border for all td in the last row */
+          }
+
+          td {
+            .dropdown-toggle {
+              text-decoration: none;
+              .dot {
+                display: inline-block;
+                width: 4px;
+                height: 4px;
+                background-color: #bcbcbc;
+                border-radius: 50%;
+                margin: 3px 0;
+              }
+            }
+          }
+        }
+        .pageScroller {
+          display: flex;
+          justify-content: flex-end;
+          gap: 15px;
+          margin-top: 31px;
+          padding: 12px;
+
+          .button {
+            padding: 10px;
+            border-radius: 2px;
+          }
+          .currentPage {
+            height: 45px;
+            width: 45px;
+            text-align: center;
+            background-color: $main-color;
+          }
+        }
+      }
+    }
+    .lower-container {
+      display: flex;
+      justify-content: space-between;
+      box-sizing: border-box;
+
+      .notification {
+        border-radius: 4px;
+        margin-top: 30px;
+        box-sizing: border-box;
         padding: 20px;
+        width: 420px;
+        background-color: #ffffff;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        .heading-layout1 {
+          display: flex;
+          justify-content: space-between;
+          gap: 188px;
+
+          .item-title {
+            font-size: 1.1rem;
+          }
+          .toggle-container {
+            .dropdown-toggle {
+              text-decoration: none;
+              .dot {
+                display: inline-block; /* or display: block; */
+                width: 5px;
+                height: 5px;
+                background-color: #bcbcbc;
+                border-radius: 50%;
+                margin: 3px 0;
+              }
+            }
+          }
+        }
+        
+      }
+
+      .all-expenses {
+        border-radius: 4px;
+        box-sizing: border-box;
+        padding: 20px 35px;
         background-color: #ffffff;
         box-shadow: $border-box-color;
         margin-top: 30px;
