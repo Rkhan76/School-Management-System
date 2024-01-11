@@ -10,7 +10,7 @@ app.set('veiws', path.resolve('./views'))
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/', (req, res)=>{
-    return res.render('student_dashboard')
+    return res.render('dashboard/parents_dashboard')
 })
 
 app.get('/login', (req, res)=>{

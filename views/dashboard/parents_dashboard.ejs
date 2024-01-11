@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/dashboards/parentsDashboard/parentsDashboard.css">
+    <title>Parent`s Dashboard</title>
+</head>
+<body>
+    <div class="sidebar">
+    <div class="sideNavbar">
+      <div class="headerLogo">
+        <img src="./images/social_media_logos/school_logo.jpg" alt="school_logo" />
+      </div>
+      <div class="toggleButton">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line1"></div>
+      </div>
+    </div>
+    <div class="sections-container">
+      <div class="dashboard sidebarSections">
+      <div class="dashboard-icon icon">
+        <img src="./images/student_dashboard/dashboard_icon.svg" alt="" />
+      </div>
+      <div>Dashboard</div>
+      <div class="button">></div>
+    </div>
+    <hr>
+    <div class="profile sidebarSections">
+      <div class="profile-icon icon">
+        <img src="./images/student_dashboard/profile.svg" alt="" />
+      </div>
+      <div>Profile</div>
+      <div class="button">></div>
+    </div>
+    <hr>
+    <div class="Attendence sidebarSections">
+      <div class="Attendence-icon icon">
+        <img src="./images/student_dashboard/attendance.svg" alt="" />
+      </div>
+      <div>Attendance</div>
+      <div class="button">></div>
+    </div>
+    <hr>
+    <div class="time-table sidebarSections">
+      <div class="time-table-icon icon">
+        <img src="./images/student_dashboard/time-table.svg" alt="" />
+      </div>
+      <div>Time Table</div>
+      <div class="button">></div>
+    </div>
+    <hr>
+    <div class="result sidebarSections">
+      <div class="result-icon icon">
+        <img src="./images/student_dashboard/result.svg" alt="" />
+      </div>
+      <div>Result</div>
+      <div class="button">></div>
+    </div>
+    <hr>
+    <div class="admit-card sidebarSections">
+      <div class="admit-card-icon icon">
+        <img src="./images/student_dashboard/admit-card.svg" alt="" />
+      </div>
+      <div>Admit Card</div>
+      <div class="button">></div>
+    </div>
+    <hr>
+    <div class="logout sidebarSections">
+      <div class="dashboard-symbol icon">
+        <img src="./images/student_dashboard/logout.svg" alt="" />
+      </div>
+      <div>Logout</div>
+      <div class="button" type="submit">></div>
+    </div>
+    <hr>
+    </div>
+  </div>
+  <div class="main-container">
+    <%- include('./partials/nav.ejs') %>
+
+    <div class="main-content">
+      <div class="dashboardName">
+        <h3>Admin Dashboard</h3>
+        <div class="routeName">
+          <div>Home</div>
+          <div class="color">></div>
+          <div class="color">Student</div>
+        </div>
+      </div>
+
+      <div class="top-container">
+            <div class="part">
+              <div class="notification-icon icon">
+                <img src="./images/student_dashboard/notification-div.svg" alt="notification-icon" />
+              </div>
+              <div class="notification-detail">
+                <p>Notifiction</p>
+                <h3>12</h3>
+              </div>
+            </div>
+            <div class="part">
+              <div class="notification-icon icon">
+                <img src="./images/student_dashboard/notification-div.svg" alt="notification-icon" />
+              </div>
+              <div class="notification-detail">
+                <p>Notifiction</p>
+                <h3>12</h3>
+              </div>
+            </div>
+            <div class="part">
+              <div class="notification-icon icon">
+                <img src="./images/student_dashboard/event.svg" alt="notification-icon" />
+              </div>
+              <div class="notification-detail">
+                <p>Events</p>
+                <h3>6</h3>
+              </div>
+            </div>
+            <div class="part">
+              <div class="notification-icon icon">
+                <img src="./images/student_dashboard/percentage.svg" alt="notification-icon" />
+              </div>
+              <div class="notification-detail">
+                <p>Attendance</p>
+                <h3>94%</h3>
+              </div>
+            </div>
+    </div>
+    <div class="middle-container">
+        <div class="my-kids">
+            <div class="heading-layout1">
+              <div class="item-title">
+                <h3>About Me</h3>
+              </div>
+              <div class="toggle-container">
+                <a class="dropdown-toggle" href="#">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </a>
+              </div>
+            </div>
+            <div class="profile-layout2">
+              <div class="profile-pic">
+                <img src="./images/student_dashboard/student-boy-profile-image.png" alt="student-profile-pic" />
+              </div>
+              <table class="profile-table">
+                <tr>
+                  <td>Name:</td>
+                  <td class="key">Jessica Rose</td>
+                </tr>
+                <tr>
+                  <td>Gender:</td>
+                  <td class="key">Jessica Rose</td>
+                </tr>
+                <tr>
+                  <td>Class</td>
+                  <td class="key">Jessica Rose</td>
+                </tr>
+                <tr>
+                  <td>Section</td>
+                  <td class="key">Jessica Rose</td>
+                </tr>
+                <tr>
+                  <td>Admission id:</td>
+                  <td class="key">Jessica Rose</td>
+                </tr>
+                <tr>
+                  <td>Addmission DAte:</td>
+                  <td class="key">Jessica Rose</td>
+                </tr>
+              </table>
+            </div>
+            <div class="profile-layout2">
+              <div class="profile-pic">
+                <img src="./images/student_dashboard/student-boy-profile-image.png" alt="student-profile-pic" />
+              </div>
+              <table class="profile-table">
+                <tr>
+                  <td>Name:</td>
+                  <td class="key">Jessica Rose</td>
+                </tr>
+                <tr>
+                  <td>Gender:</td>
+                  <td class="key">Jessica Rose</td>
+                </tr>
+                <tr>
+                  <td>Class</td>
+                  <td class="key">Jessica Rose</td>
+                </tr>
+                <tr>
+                  <td>Section</td>
+                  <td class="key">Jessica Rose</td>
+                </tr>
+                <tr>
+                  <td>Admission id:</td>
+                  <td class="key">Jessica Rose</td>
+                </tr>
+                <tr>
+                  <td>Addmission DAte:</td>
+                  <td class="key">Jessica Rose</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        <div class="all-expenses">
+            <div class="sectionName">
+              <h3>All Exam Results</h3>
+              <a class="dropdown-toggle" href="#">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </a>
+            </div>
+            <div class="searchBar">
+              <div class="searchByExam search-sections">
+                <input type="text" placeholder="Search by Exam ... " />
+              </div>
+              <div class="searchBySubject search-sections">
+                <input type="text" placeholder="Search by Subject ... " />
+              </div>
+              <div class="searchByDate search-sections">
+                <input type="text" placeholder="dd/mm/yyyy" />
+              </div>
+              <button type="submit">Submit</button>
+            </div>
+            <table class="resultTable">
+              <thead>
+                <th>ID</th>
+                <th>Exam Name</th>
+                <th>Subject</th>
+                <th>Grade</th>
+                <th>Precent</th>
+                <th>Date</th>
+              </thead>
+              <tr>
+                <td>#0025</td>
+                <td>First Semester</td>
+                <td>English</td>
+                <td>A</td>
+                <td>99.0>100</td>
+                <td>22/02/2024</td>
+                <td><a class="dropdown-toggle" href="#">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </a></td>
+              </tr>
+              <tr>
+                <td>#0025</td>
+                <td>First Semester</td>
+                <td>English</td>
+                <td>A</td>
+                <td>99.0>100</td>
+                <td>22/02/2024</td>
+                <td><a class="dropdown-toggle" href="#">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </a></td>
+              </tr>
+              <tr>
+                <td>#0025</td>
+                <td>First Semester</td>
+                <td>English</td>
+                <td>A</td>
+                <td>99.0>100</td>
+                <td>22/02/2024</td>
+                <td><a class="dropdown-toggle" href="#">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </a></td>
+              </tr>
+              <tr>
+                <td>#0025</td>
+                <td>First Semester</td>
+                <td>English</td>
+                <td>A</td>
+                <td>99.0>100</td>
+                <td>22/02/2024</td>
+                <td><a class="dropdown-toggle" href="#">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </a></td>
+              </tr>
+              <tr>
+                <td>#0025</td>
+                <td>First Semester</td>
+                <td>English</td>
+                <td>A</td>
+                <td>99.0>100</td>
+                <td>22/02/2024</td>
+                <td><a class="dropdown-toggle" href="#">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </a></td>
+              </tr>
+              <tr>
+                <td>#0025</td>
+                <td>First Semester</td>
+                <td>English</td>
+                <td>A</td>
+                <td>99.0>100</td>
+                <td>22/02/2024</td>
+                <td><a class="dropdown-toggle" href="#">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </a></td>
+              </tr>
+              <tr>
+                <td>#0025</td>
+                <td>First Semester</td>
+                <td>English</td>
+                <td>A</td>
+                <td>99.0>100</td>
+                <td>22/02/2024</td>
+                <td><a class="dropdown-toggle" href="#">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </a></td>
+              </tr>
+              <tr>
+                <td>#0025</td>
+                <td>First Semester</td>
+                <td>English</td>
+                <td>A</td>
+                <td>99.0>100</td>
+                <td>22/02/2024</td>
+                <td><a class="dropdown-toggle" href="#">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </a></td>
+              </tr>
+              <tr>
+                <td>#0025</td>
+                <td>First Semester</td>
+                <td>English</td>
+                <td>A</td>
+                <td>99.0>100</td>
+                <td>22/02/2024</td>
+                <td><a class="dropdown-toggle" href="#">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                  </a></td>
+              </tr>
+            </table>
+
+            <div class="pageScroller">
+              <div class="previous button" type="submit">Previous</div>
+              <div class="currentPage button">1</div>
+              <div class="Next button" type="submit">Next</div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="copyright">
+      <p>© Copyrights akkhor 2019. All rights reserved. Designed by PsdBosS</p>
+      <div class="upButton">
+        <i class="las la-angle-up upwardSymbol"></i>
+      </div>
+    </div>
+  </div>
+
+  </div>
+</body>
+</html>
+
+
+
+
+<!-- sass --watch public/css/dashboard/studentDashboard.scss:public/css/dashboard/studentDashboard.css -->
